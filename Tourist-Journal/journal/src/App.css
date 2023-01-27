@@ -1,0 +1,40 @@
+.post {
+  display: flex;
+  margin: 20px;
+}
+
+.picture {
+  flex: 0 0 30%;
+  order: -1;
+}
+
+.data {
+  flex: 0 0 70%;
+  margin-left: 20px;
+}
+
+/* make sure the images are responsive */
+.picture img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .post {
+    flex-wrap: wrap;
+  }
+
+  .picture,
+  .data {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.location-data {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -5%;
+}
